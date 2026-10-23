@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Tablet Website</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2b6cb0;
+        }
+        button {
+            background-color: #4299e1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #3182ce;
+        }
+    </style>
+
+    <!-- 🚀 STEP 1: HERE IS THE JSDLIVR JQUERY LINK YOU WERE LOOKING AT -->
+    <script src="https://jsdelivr.net"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>jsDelivr is Working! 🎉</h1>
+        <p>This page uses the minified script file hosted on the global edge network.</p>
+        
+        <!-- This button will be controlled by the code file -->
+        <button id="testButton">Click Me to Test jQuery!</button>
+    </div>
+
+    <!-- ⚡ STEP 2: THIS CODE CONTROLS THE BUTTON VIA JQUERY -->
+    <script>
+        // Once the webpage finishes loading...
+        $(document).ready(function() {
+            
+            // When someone taps the button...
+            $("#testButton").click(function() {
+                
+                // Show an alert pop-up window on the tablet screen!
+                alert("Success! jQuery loaded perfectly from jsDelivr!");
+                
+            });
+            
+        });
+    </script>
+
+</body>
+</html>
+
